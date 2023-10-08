@@ -1,0 +1,263 @@
+/* start main properties */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* end main properties */
+
+/* start header */
+header .logo {padding: 15px 10%; overflow: hidden}
+
+header .logo .container {
+    width: 22px;
+    height: 24px;
+    overflow: hidden;
+    float: left
+}
+
+header .logo .container div {
+    width: 10px;
+    height: 10px;
+    float: left
+}
+
+header .logo .container div:first-of-type {background-color: #179dda}
+
+header .logo .container div:nth-of-type(2) {
+    background-color: #253243;
+    margin-top: 2px;
+    float: right
+}
+
+header .logo .container div:nth-of-type(3) {background-color: #253243; margin-top: 2px}
+
+header .logo .container div:last-of-type {
+    background-color: #179dda;
+    margin-top: 2px;
+    float: right
+}
+
+header .logo span 
+{
+    line-height: 28px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em
+}
+
+header .widget {
+    height: 400px;
+    background-image: url('../images/forbg.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+header .widget .bg 
+{
+    height: 100%;
+    background-color: #000000;
+    opacity: .6;
+    color: white;
+    padding-top: 90px;
+    box-sizing: border-box
+} 
+
+header .widget .bg > :nth-child(n+1) {margin: auto; width: max-content}
+
+header .widget .bg div:first-of-type 
+{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-bottom: 3px inset #179dda;
+    -webkit-text-stroke: medium #179dda 
+}
+
+header .widget .bg div:last-of-type {
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+header .widget .bg div:last-of-type span {text-transform: uppercase}
+
+header .widget .bg button 
+{
+    display: block;
+    padding: 5px 10px;
+    background-color: transparent;
+    border-style: none;
+    box-shadow: 0px 0px 5px/* blur */ 2px/* spread */ #179dda;
+    text-transform: capitalize
+}
+
+header .widget .bg button:hover {background-color: #179dda}
+/* end header */
+
+/* start content */
+article .container,
+footer .container {width: 80%;  margin: auto}
+
+article .idea {padding: 40px 0; background-color: #e6e8e9}
+
+article .idea .container {text-align: center}
+
+article .idea .container h2 {margin-bottom: 20px; text-transform: capitalize}
+
+article .idea .container p:first-letter {text-transform: uppercase}
+
+article .types {padding: 40px 0px}
+
+article .types .container {display: flex; justify-content: space-between}
+
+article .types .container div {flex-basis: 30%; text-align: center}
+
+article .types .container div h3 {margin: 15px 0px; text-transform: capitalize}
+
+article .types .container div i {
+    display: inline-block;
+    border-radius: 2px;
+    background-color: rgb(95, 196, 252);
+    color: white
+}
+
+article .types .container div i[class="fas fa-mobile-alt fa-2x"] {padding: 10px 16px}
+
+article .types .container div i[class="fa fa-paint-brush fa-2x"] {padding: 10px}
+
+article .types .container div i[class="fas fa-brush fa-2x"] {padding: 10px 14px }
+
+/* portfolio */
+.portfolio {background-color: #e6e8e9; padding: 40px 0}
+
+.portfolio .container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: capitalize
+}
+
+.portfolio .container h6 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: capitalize
+}
+
+.portfolio .container article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.portfolio .container article div {
+    flex-basis: 33.333%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    padding-right: 12px
+}
+
+.portfolio .container article div:nth-of-type(3n+3) {padding-right: 0}
+
+.portfolio .container article div:nth-last-of-type(-n+3) {margin-bottom: 0}
+
+.portfolio .container article div img {width: 100%}
+/* portfolio */
+
+/* start stay with me */
+article .stay 
+{
+    padding: 40px 0;
+    text-align: center;
+    background-image: url('../images/stay-img.jpg');
+    background-size: cover;
+    background-position-y: 40% 
+}
+
+article .stay h1 {
+    margin-top: 0;
+    color: white;
+    text-transform: capitalize
+}
+
+article .stay h6 {
+    margin-bottom: 20px;
+    color: white;
+    text-transform: capitalize
+}
+
+article .stay form {
+    width: max-content;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px
+}
+
+article .stay form input 
+{
+    width: 400px;
+    height: 40px;
+    display: block;
+    margin: 0 auto 15px;
+    background-color: transparent;
+    border-style: none;
+    box-shadow: 0px 0px 5px 1px #179dda;
+    color: white;
+    box-sizing: border-box;
+    padding: 2px
+}
+
+article .stay form input[type*="text"] {margin-top: 10px}
+
+article .stay form textarea 
+{
+    width: 400px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    resize: none;
+    background-color: transparent;
+    border-style: none;
+    box-shadow: 0px 0px 5px 1px #179dda;
+    color: white;
+    box-sizing: border-box;
+    padding: 2px
+}
+
+article .stay form span {
+    float: left;
+    padding: 10px 0;
+    margin-top: 10px;
+    color: white
+}
+
+article .stay form button 
+{
+    float: right;
+    padding: 5px 20px;
+    margin-top: 10px;
+    background-color: transparent;
+    border-style: none;
+    box-shadow: 0px 0px 5px/* blur */ 2px/* spread */ #179dda;
+    text-transform: capitalize;
+    color: white
+}
+
+article .stay form button:hover {background-color: #179dda}
+/* end stay with me */
+/* end content */
+
+/* start footer */
+footer .container {overflow: hidden; padding: 10px 0}
+
+footer .container div:first-of-type {
+    float: left;
+    line-height: 32px;
+    text-transform: capitalize
+}
+
+footer .container div:last-of-type {float: right}
+
+footer .container div:last-of-type a {color: #179dda}
+/* end footer */
+
